@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+       Copyright 2006-2016 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+    <!-- 使用时请自行更改本机对应的位置 -->
+    <!-- <classPathEntry location="D:/workspace-asiainfo/platform/.m2/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" /> -->
+    <classPathEntry location="C:/Users/Administrator/.m2/repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar" />
+    <context id="tinyhouseContext" defaultModelType="flat" targetRuntime="MyBatis3Simple">
+        <!-- 生成文件编码默认为UTF-8 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 注解配置 -->
+	    <commentGenerator  type="org.mybatis.generator.my.MyCommentGenerator">
+			<property name="supspressDate" value="true" />
+			<property name="suppressAllComments" value="false" />
+	    </commentGenerator>
+	    <!-- 数据库配置 -->
+    	<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://39.104.75.143:3306/dhouse?autoReconnect=true" userId="root" password="ld2304509" />
+    	<!-- 类型转换配置 -->
+    	<javaTypeResolver  type="org.mybatis.generator.my.MyJavaTypeResolver">
+		    <property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- 生成domain -->
+		<javaModelGenerator targetPackage="com.ld.dhouse.service.common.model.data" targetProject="D:\test" />
+		<!-- 生成SQL map -->
+	    <sqlMapGenerator targetPackage="mysql"  
+	        targetProject="D:\test">
+	        <property name="enableSubPackages" value="true" />  
+	    </sqlMapGenerator>
+	  	<!-- 生成DAO -->
+	    <javaClientGenerator type="XMLMAPPER"
+	        targetPackage="com.ld.dhouse.service.server.dao" targetProject="D:\test">
+	        <property name="enableSubPackages" value="true" />
+	    </javaClientGenerator>
+	    <table tableName="dh_channel" domainObjectName="Channel" />
+		<table tableName="dh_content" domainObjectName="Content" />
+		<table tableName="dh_content_text" domainObjectName="ContentText" />
+		<table tableName="dh_template" domainObjectName="Template" />
+		<table tableName="dh_slide_image" domainObjectName="SlideImage" />
+	</context>
+</generatorConfiguration>

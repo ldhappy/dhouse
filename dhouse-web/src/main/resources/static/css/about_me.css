@@ -1,0 +1,12 @@
+/*关于我页面样式*/
+.about-me{
+    background:#fff;
+    margin-bottom:35px;
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    text-align:center;
+}
+.about-me img{
+    width: 50%;
+}

@@ -1,0 +1,110 @@
+/**
+内容页内容详情默认样式
+ */
+.post {
+
+    padding:35px;
+    background:#fff;
+    margin-bottom:35px;
+    position:relative;
+    overflow:hidden;
+
+}
+.post .post-head {
+    text-align:center
+}
+.post .post-head .post-title {
+    margin:0;
+    font-size:2em;
+    line-height:1.2em;
+    overflow: hidden;
+}
+.post .post-head .post-meta {
+    color:#959595;
+    margin:14px 0 0
+}
+.post .post-head .post-meta span {
+    margin:0 7px;
+    white-space:nowrap
+}
+.post .post-content {
+    margin:30px 0
+}
+.post .post-footer {
+    margin-top:30px;
+    border-top:1px solid #ebebeb;
+    padding:21px 0 0
+}
+/*控制内容区域样式---开始*/
+.post-content {
+    color:#606060
+}
+.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6 {
+    color:#555555
+}
+.post-content h1 {
+    font-size:1.8em;
+    margin:.67em 0
+}
+.post-content>h1 {
+    margin-top:0;
+    font-size:2em
+}
+.post-content h2 {
+    font-size:1.5em;
+    margin:.83em 0
+}
+.post-content h3 {
+    font-size:1.17em;
+    margin:1em 0
+}
+.post-content h4,.post-content h5,.post-content h6 {
+    font-size:1em;
+    margin:1.6em 0 1em 0
+}
+.post-content h6 {
+    font-weight:500
+}
+.post-content p {
+    margin-top:0;
+    margin-bottom:1.46em
+}
+.post-content a {
+    text-decoration: none;
+    word-wrap:break-word;
+    -moz-text-decoration-color:rgba(0,0,0,.4);
+    -webkit-text-decoration-color:rgba(0,0,0,.4);
+    text-decoration-color:rgba(0,0,0,.4)
+}
+.post-content a:hover {
+    text-decoration: none;
+    -moz-text-decoration-color:rgba(0,0,0,.6);
+    -webkit-text-decoration-color:rgba(0,0,0,.6);
+    text-decoration-color:rgba(0,0,0,.6)
+}
+.post-content a img {
+    border:none
+}
+.post-content b,.post-content strong {
+    font-weight:700;
+}
+.post-content em,.post-content i {
+    font-style:italic;
+}
+.post-content img {
+    max-width:100%;
+    height:auto;
+    margin:.2em 0
+}
+
+.post-content td,th {
+    padding: 5px 10px;
+    border:1px solid #ebebeb;
+}
+.post-content th {
+    background-color: #F7F7F7;
+}
+/*控制内容区域样式---结束*/
+
+
+

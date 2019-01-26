@@ -1,0 +1,44 @@
+/*内容列表样式---开始*/
+.content-list{
+    background:#fff;
+    margin-bottom:35px;
+    position:relative;
+    overflow:hidden
+}
+.content-list ul{
+    list-style-type:none;
+    padding:10px 20px 10px 20px;
+    margin-bottom: 0px;
+}
+.content-list ul li{
+    padding:10px 0px 30px 0px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+.content-list ul li:last-child{
+    border-bottom: 0;
+}
+
+.content-list ul li a{
+    text-decoration: none;
+    display: inline-block;
+}
+.content-list ul li time{
+    float:right;
+}
+/*大屏幕截断标题*/
+@media (min-width:768px) {
+    .content-list ul li{
+        padding:10px 0px 10px 0px;
+    }
+    .content-list ul li a{
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+    }
+}
+
+
+/*内容列表样式---结束*/
