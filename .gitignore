@@ -24,4 +24,5 @@ proguard/
 
 /**/rebel.xml
 /user/
+*.uml
 
